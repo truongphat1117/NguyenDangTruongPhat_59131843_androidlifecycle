@@ -1,0 +1,16 @@
+
+Câu 4:
+Phương thức vòng đời được gọi khi ứng dụng đang chạy và người sử
+dụng bấm vào nút back sau đó mở lại ứng dụng là: khi bấm vào nút back onPause được gọi tiếp tục đến onStop và onDestroy.
+						 khi mở lại ứng dụng onCreate được gọi đến onStart rồi onResume.
+
+Câu 5:
+Phương thức vòng đời được gọi khi ứng dụng đang chạy và người sử
+dụng bấm vào nút home sau đó mở lại ứng dụng là: Khi bấm vào nút home onPause được gọi tiếp tục đến onStop.
+						 Khi mở lại ứng dụng onRestart được gọi đến onStart rồi tới onResume.
+
+
+Câu 6: Để lưu thông tin của ứng dụng để khôi phục lại trạng thái hiển thị lấy vị dụ như bài hiển thị đồng hồ ở trên thì
+em cho đồng thời code hiển thị đồng hồ vào phương thức onCreate và onStart là để có thể lưu lại thông tin đồng hồ khi ta tắt
+, khi bấm home, và khi ứng dụng bị đè Vì tất cả các thương thức vòng đời khi ta mở ứng dụng tắt hay xoay man hình đều gọi phương thức
+onCreate và onStart nhờ vậy có thể lưu thông tin hiển thị của đồng hồ.
